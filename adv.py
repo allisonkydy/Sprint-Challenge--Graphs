@@ -28,9 +28,24 @@ player = Player(world.starting_room)
 
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
+random.seed(1123)
 traversal_path = traverse_map(player)
-print(traversal_path)
 
+# best = 959
+# traversal_path = []
+# seed = 1123
+
+# for i in range(220000, 270000):
+#     random.seed(i)
+#     player.current_room = world.starting_room
+#     traversal_path = traverse_map(player)
+#     if len(traversal_path) < best:
+#         best = len(traversal_path)
+#         seed = i
+
+# print("best", best)
+# print("seed", seed)      
+# print(traversal_path)
 
 # TRAVERSAL TEST
 visited_rooms = set()
